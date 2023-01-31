@@ -22,28 +22,24 @@ body {
 
 .navigation {
     font-size: 22px;
-    line-height: 22px;
-    
+    line-height: 22px;   
 }
 
 .logo {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 112px;
-    
+    margin-right: 112px;   
 }
 
 .navigation-list {
     display: inline-block;
     vertical-align: middle;
     list-style: none;
-
 }
 
 .navigation-item {
     display: inline-block;
     margin-right: 38px;
-
 }
 
 .navigation-item:nth-child(4) {
@@ -64,7 +60,7 @@ body {
     padding-left: 15px;
     background-color: transparent;
     border: 3px solid #9965e3;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 47px;
     width: 280px;
     height: 55px;
@@ -84,15 +80,25 @@ body {
 }
 
 .hero {   
-    font-weight: 900;    
+    font-weight: 900;
 }
 
 .hero-wrapper {
+    position: relative;
+    height: 780px;    
+}
+
+.hero-wrapper::after {
+    content: "";
     background-image: url("image/hero.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 780px;
+    border-radius: 0 150px;
     opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .hero-title {
