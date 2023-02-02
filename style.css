@@ -28,16 +28,19 @@ a {
 .header {
     padding-top: 60px;
     padding-bottom: 80px;
-}
-
-.navigation {
     font-size: 22px;
-    line-height: 22px;   
+    line-height: 22px;
 }
 
 .logo {
     vertical-align: middle;
-    margin-right: 112px;   
+    width: 108px;
+    height: 55px;
+    margin-right: 112px;
+}
+
+.navigation {
+    display: inline-block;
 }
 
 .navigation-list {
@@ -77,6 +80,10 @@ a {
     background-color: transparent;
     padding-left: 15px;
     width: 80%;
+}
+
+input::-webkit-input-placeholder { 
+    color: inherit; 
 }
 
 .search-btn {
